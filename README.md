@@ -1,118 +1,66 @@
-# CSV Data Cleaning using Pandas & NumPy
+# CSV Data Cleaning using Pandas and NumPy
 
-## 📌 Project Overview
+## Project Overview
 
-This project focuses on cleaning and preprocessing an employee CSV dataset using **Python, Pandas, and NumPy**.
+This is a small Data Analytics project focused on cleaning an employee CSV dataset using Python, Pandas, and NumPy.
 
-The dataset initially contained missing values, invalid values, infinite values, negative values, duplicate records, and inconsistent data. The cleaning process transforms the raw dataset into a cleaner and more reliable dataset suitable for further **Data Analysis and visualization**.
+The original dataset contains missing values, invalid values, infinite values, negative values, and duplicate records. The project identifies and handles these issues to create a cleaner dataset.
 
-## 🎯 Objectives
+## Technologies Used
 
-* Identify missing and invalid data
-* Handle missing values appropriately
-* Detect and replace invalid and infinite values
-* Remove duplicate records
-* Handle negative and inconsistent values
-* Prepare a clean dataset for further analysis
+* Python
+* Pandas
+* NumPy
+* CSV
 
-## 🛠️ Technologies Used
+## Data Cleaning Performed
 
-* **Python**
-* **Pandas**
-* **NumPy**
-* **CSV**
+The following cleaning operations were performed:
 
-## 🧹 Data Cleaning Operations
+* Checked the dataset for missing values.
+* Filled missing numerical values.
+* Identified and replaced invalid numerical values.
+* Handled `inf` and `-inf` values.
+* Handled negative values in numerical columns.
+* Filled missing categorical values.
+* Removed duplicate records.
+* Exported the cleaned dataset as a new CSV file.
 
-The following operations were performed on the employee dataset:
+## Project Files
 
-### 1. Missing Value Handling
+* `employee_dirty_data.csv` — Original dataset.
+* `cleaning.py` — Python code used for cleaning the dataset.
+* `cleaned_employee_data.csv` — Cleaned dataset.
+* `README.md` — Project documentation.
 
-Missing values were identified using Pandas and handled using appropriate replacement techniques such as median-based filling for numerical columns.
-
-### 2. Invalid Values
-
-Invalid values such as negative values and infinite values (`inf` and `-inf`) were identified and replaced with appropriate values.
-
-### 3. Duplicate Removal
-
-Duplicate employee records were identified and removed to improve data consistency.
-
-### 4. Missing Categorical Values
-
-Missing categorical values such as city and performance rating were handled using suitable replacement values.
-
-### 5. Data Validation
-
-The dataset was checked after cleaning to ensure that the resulting data was more consistent and suitable for further analysis.
-
-## 📂 Project Files
-
-| File                        | Description                                               |
-| --------------------------- | --------------------------------------------------------- |
-| `employee_dirty_data.csv`   | Original dataset containing missing and inconsistent data |
-| `cleaning.py`               | Python script used for data cleaning                      |
-| `cleaned_employee_data.csv` | Dataset after the cleaning process                        |
-| `README.md`                 | Project documentation                                     |
-
-## 🔄 Project Workflow
+## Workflow
 
 ```text
-Raw Employee CSV
-       ↓
-Data Inspection
-       ↓
-Identify Missing & Invalid Values
-       ↓
-Handle Missing Values
-       ↓
-Handle Infinite & Negative Values
-       ↓
-Remove Duplicate Records
-       ↓
-Validate Cleaned Data
-       ↓
-Clean Employee CSV
+Employee CSV
+     ↓
+Inspect Data
+     ↓
+Find Missing & Invalid Values
+     ↓
+Clean Data using Pandas & NumPy
+     ↓
+Remove Duplicates
+     ↓
+Export Cleaned CSV
 ```
 
-## 📊 Result
+## Purpose
 
-The cleaning process produced a more consistent employee dataset by:
+The purpose of this project is to practice basic **data cleaning and preprocessing** using Pandas and NumPy before performing further data analysis.
 
-* Handling missing numerical values
-* Handling missing categorical values
-* Replacing invalid and infinite values
-* Removing duplicate records
-* Improving overall data quality
-
-The cleaned dataset can now be used for **Exploratory Data Analysis (EDA), visualization, and further analytics**.
-
-## ▶️ How to Run
-
-### 1. Clone the repository
-
-```bash
-git clone <your-repository-url>
-```
-
-### 2. Install the required libraries
-
-```bash
-pip install pandas numpy
-```
-
-### 3. Run the cleaning script
-
-```bash
-python cleaning.py
-```
-
-## 👨‍💻 Author
+## Author
 
 **Abhijit Shetake**
 
 B.Tech Computer Science & Engineering
 
-### ⭐ Skills Demonstrated
 
-**Python | Pandas | NumPy | Data Cleaning | Data Preprocessing | Data Analytics**
+
+
+
+
